@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RqSuperHeroes = () => {
+const RQSuperHeroes = () => {
   return (
     <div>
       Rq Super Heroes
@@ -8,4 +8,4 @@ const RqSuperHeroes = () => {
   )
 }
 
-export default RqSuperHeroes
+export default RQSuperHeroes

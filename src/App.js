@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
-import { HomePage } from './components/Home.page'
-import { RQSuperHeroesPage } from './components/RQSuperHeroes.page'
-import { SuperHeroesPage } from './components/SuperHeroes.page'
+import Home from './components/home'
+import RQSuperHeroes from './components/rqsuperheroes'
+import SuperHeroes from './components/superheroes'
 
 function App() {
   return (
@@ -21,17 +21,17 @@ function App() {
             </li>
           </ul>
         </nav>
-        <Switch>
+        <Routes>
           <Route path='/super-heroes'>
-            <SuperHeroesPage />
+            <SuperHeroes />
           </Route>
           <Route path='/rq-super-heroes'>
-            <RQSuperHeroesPage />
+            <RQSuperHeroes />
           </Route>
           <Route path='/'>
-            <HomePage />
+            <Home />
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </Router>
   )
